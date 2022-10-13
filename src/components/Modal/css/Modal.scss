@@ -1,0 +1,13 @@
+.modal-header{
+
+    .btn-close{
+        border: none;
+        margin-top: 0.5rem;
+
+        &::before{
+            font: var(--fa-font-solid);
+            content: '\f057';
+            font-size: 1rem;
+        }
+    }
+}

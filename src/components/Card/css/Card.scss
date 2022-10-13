@@ -1,0 +1,73 @@
+*{
+    .card{
+        border-radius: 1rem;
+        width: 30%;
+        border: none;
+
+        .useravatar{
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: center;
+        }
+
+        .card-body{
+            padding: 1rem;
+            width: 20rem;
+
+            .card-description{
+                margin: 0.2rem 0;
+
+                div{
+                    width: 20rem;
+                }
+            }
+
+            p{
+                overflow: hidden;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+            }
+
+            .time{
+                font-size: 0.7rem;
+                color: #5e5e5e;
+                text-align: right;
+
+                time{
+                    font-size: 0.7rem;
+                    color: #5e5e5e;
+                }
+            }
+        }
+        
+        .card-description{
+
+            div{
+                font-size: 0.9rem;
+                color: #5e5e5e;
+                padding: 0;
+                overflow: hidden;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 600px){
+    .card{
+        div{
+            display: block;
+
+            .useravatar{
+                height: 7rem;
+            }
+
+            div{
+                .card-body{
+                    width: fit-content !important;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,32 @@
+.footer-container{
+    width: 100%;
+    border-top: #b8b8b8 solid 1px;
+    
+    .row{
+        height: inherit;
+
+        .col{
+            font-size: 0.8rem;
+            height: 100%;
+
+            &:first-child{
+                padding: 5rem 0;
+            }
+
+            ul.social-media-contact{
+                list-style-type: none;
+                display: flex;
+                justify-content: end;
+
+                li{
+                    margin: 0 1rem 0 0;
+                }
+            }
+
+            ul{
+                list-style-type: none;
+            }
+        }
+    }
+
+}

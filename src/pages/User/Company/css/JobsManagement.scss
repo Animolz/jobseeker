@@ -1,0 +1,148 @@
+* {
+    #hero-jobs-management{
+        z-index: -999;
+        background-color: #8a81ec;
+        position: absolute;
+        width: 100%;
+        height: 18rem;
+    }
+
+    #jobs-management-container{
+
+        #jobs-management-content{
+
+            .table-custom{
+
+                #jobs-table.table{
+
+                    & > thead{
+                        
+                        & > tr{
+
+                            & > th{
+                                font-weight: bold;
+                                font-size: 1.1rem;
+                            }
+                        }
+                    }
+
+                    & > tbody{
+
+                        & > tr{
+                            cursor: pointer;
+
+                            & > td:nth-child(2){
+
+                                width: 20rem;
+                            }
+
+                            & > td{
+                                font-size: 1rem;
+                            }
+                        }
+                    }
+                }
+            }
+
+            #job-detail-info{
+
+                .col{
+                    margin-left: 0.8rem;
+                }
+
+                #full-detail{
+                    border-radius: 0.5rem;
+                    height: fit-content;
+                    margin-bottom: 2rem;
+
+                    #detail{
+
+                        .title{
+                            
+                            position: relative;
+        
+                                *{
+                                    margin: 0;
+                                }
+                                
+                                h3{
+                                    font-size: 2rem;
+                                    font-weight: bold;
+                                    overflow: hidden;
+                                    text-overflow: ellipsis;
+                                }
+        
+                                p{
+                                    color: #353535;
+                                }
+        
+                                .card-option{
+                                    position: absolute;
+                                    top: 0;
+                                    right: 0;
+                                    height: fit-content;
+                                }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    #job-detail-modal{
+        
+        & > .modal-content{
+
+            & > .modal-header{
+
+                & > .modal-title{
+                    font-size: 2rem;
+                    font-weight: bold;
+                } 
+            }
+
+            & > .modal-body{
+                height: 60vh;
+                max-height: 75vh;
+                height: fit-content;
+                overflow-x: hidden;
+                
+                & > .title{
+                    
+                    h1{
+                        font-size: 2rem;
+                        font-weight: bold;
+                        margin: 0;
+                    }
+                }
+
+                & > .description{
+                    
+                    & > h3 {
+                        font-weight: 600;
+                        font-size: 1.5rem;
+                        margin: 0;
+                    }
+
+                    & > p{
+                        font-size: 1rem;
+                        font-weight: 600;
+                        color: #696969;
+                    }
+
+                    & > ul{
+                        list-style: inside;
+                        list-style-type: disc;
+
+                        li{
+                            font-size: 1rem;
+                            font-weight: 600;
+                            color: #696969;
+                        }
+                    }
+                }
+
+            }
+        }
+    }
+}

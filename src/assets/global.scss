@@ -1,0 +1,116 @@
+*{
+    color: #000000;
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: 500;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.hero{
+    position: relative;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: slategrey;
+    background-blend-mode: multiply;
+    padding: 5rem 0;
+    overflow: hidden;
+    z-index: -999;
+
+    *{
+        color: #fff;
+    }
+
+    .container{
+        border: 0.2rem #fff solid;
+        border-style: double;
+        background-color: rgba(77, 77, 77, 0.356);
+        backdrop-filter: blur(0.5rem);
+    }
+
+    h1{
+        font-size: 3rem;
+        font-weight: 900;
+    }
+
+    span{
+        font-size: 1.5rem;
+    }
+}
+
+#error-message{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.box-shadow-1{
+    box-shadow: 0 10px 35px rgba(0,0,0, 0.5);
+}
+
+.with-sidebar-container{
+    margin-left: 17rem;
+    margin-right: 2rem;
+}
+
+.dashboard-header{
+
+    .title{
+        position: relative;
+
+        & > h4{
+            color: #fff;
+            font-weight: 800;
+        }
+
+        .breadcrumb{
+            width: fit-content;
+            background-color: transparent;
+            padding: 0;
+
+            & > .breadcrumb-item{
+
+                &:not(:first-child)::before{
+                    color: #fff;
+                    content:'>';
+                }
+                
+                &.active{
+                    color: rgba(255,255,255,0.6);
+                }
+
+                & > a{
+                    & > a{
+                        color: #fff;
+                    }
+                }
+            }
+        }
+
+        & > div{
+            position: absolute;
+            top: 0rem;
+            right: 0.1rem;
+            background-color: #fff;
+            padding: 0.5rem;
+            box-shadow: 0 0 0.6rem 0.1rem #b8b8b8;
+            border-radius: 0.5rem;
+
+            & > p{
+                color: #2DB17E;
+                font-size: 4rem;
+                font-weight: 900;
+            }
+
+            & > span{
+                align-self: center;
+                font-size: 1.2rem;
+                color: #303030;
+                font-weight: 700;
+                margin-left: 1rem;
+            }
+        }
+    }
+}
