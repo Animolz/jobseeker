@@ -16,8 +16,8 @@ const ModalView = (props) => {
             </Button>
 
             <Modal show={show} onHide={handleClose} size={size} {...inputProps}>
-                <Modal.Header closeButton>
-                <Modal.Title>{title}</Modal.Title>
+                <Modal.Header>
+                <Modal.Title className="w-100">{title}<button className="position-absolute button-close" onClick={handleClose}></button></Modal.Title>
                 </Modal.Header>
                 <Modal.Body>{content}</Modal.Body>
                 <Modal.Footer>

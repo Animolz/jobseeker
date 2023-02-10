@@ -1,0 +1,11 @@
+.admin{
+    &__header{
+        & > .title{
+            & > a{
+                right: 0;
+                top: 60%;
+                font-size: 1.2rem;
+            }
+        }
+    }
+}

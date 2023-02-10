@@ -1,13 +1,13 @@
 import React from "react";
-import UserAvatar from "./UserAvatar";
+import AvatarInit from "utils/AvatarInit";
 
 const UserInfo = (props) => {
     const { user } = props; 
 
     return(
         <React.Fragment>
-                <UserAvatar avatar={user.avatar} username={user.username} />
-                <p className="m-0 ml-2">{user.username}</p>
+                <AvatarInit avatar={user?.avatar} size={50} round={true} name={user?.username} border='border' />
+                <p className="mb-0 ml-3">{user?.username}</p>
         </React.Fragment>
     )
 }

@@ -1,0 +1,53 @@
+.company-profile{
+    &__user-info{
+        margin-top: -10rem;
+
+        & > div:nth-child(2){
+            margin: 1rem 1rem;
+            background-color: rgba($color: #000000, $alpha: 0.07);
+            border-radius: 0.5rem;
+
+            & > div{
+                & > i{
+                    width: 2rem;
+                }
+            }
+        }
+    }
+
+    &__user-detail{
+        background-color: rgba($color: #000000, $alpha: 0.07);
+
+        
+    }
+
+    &__tabs{
+        margin-top: -4rem;
+
+        & > button{
+            width: 10rem;
+            height: 4rem;
+            font-size: 1.3rem;
+            border-radius: 0.5rem 0.5rem 0 0;
+            border: rgba($color: #000000, $alpha: 0.1) solid 1px;
+            border-bottom: 0;
+
+            &:hover{
+                border: rgba($color: #000000, $alpha: 0.3) solid 1px;
+                background-color: rgba($color: #fff, $alpha: 0.08);
+            }
+
+            &:focus{
+                box-shadow: none;
+            }
+        }
+
+        & > button.active{
+            background-color: #ddd;
+        }
+    }
+
+    &-comments__container{
+        margin-right: 35rem;
+    }
+}

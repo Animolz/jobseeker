@@ -1,32 +1,38 @@
 .footer-container{
-    width: 100%;
-    border-top: #b8b8b8 solid 1px;
     
-    .row{
-        height: inherit;
+}
 
-        .col{
-            font-size: 0.8rem;
-            height: 100%;
+.footer{
 
-            &:first-child{
-                padding: 5rem 0;
-            }
+    &__container{
+        width: 100%;
+        border-top: #b8b8b8 solid 1px;
+    
+        .row{
+            height: inherit;
 
-            ul.social-media-contact{
-                list-style-type: none;
-                display: flex;
-                justify-content: end;
+            .col{
+                font-size: 0.8rem;
+                height: 100%;
 
-                li{
-                    margin: 0 1rem 0 0;
+                &:first-child{
+                    padding: 5rem 0;
                 }
-            }
-
-            ul{
-                list-style-type: none;
+                
+                ul{
+                    list-style-type: none;
+                }
             }
         }
     }
 
+    &__social-media{
+        list-style-type: none;
+        display: flex;
+        justify-content: end;
+
+        li{
+            margin: 0 1rem 0 0;
+        }
+    }
 }

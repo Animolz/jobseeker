@@ -5,7 +5,7 @@ const CardDescription = (props) => {
     const { salary, place, ...inputProps } = props;
 
     return (
-        <Row className='card-description'>
+        <Row className='card__description'>
             <Col xs={3} className='mr-1'>{salary}</Col>
             <Col xs={8} className=''>{place}</Col>
         </Row>

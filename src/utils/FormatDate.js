@@ -9,6 +9,10 @@ const FormatDate =  {
         return format(new Date(value), 'dd/MM/yyyy hh:mm:ss');
     },
 
+    fInputDate(value) {
+        return format(new Date(value), 'yyyy-MM-dd');
+    },
+
     fDate(value) {
         return format(new Date(value), 'dd');
     },

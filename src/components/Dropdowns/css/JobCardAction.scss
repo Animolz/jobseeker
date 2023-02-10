@@ -1,0 +1,34 @@
+.accordion-action{
+    padding: 0.5rem;
+    border: #c6c6c6 solid 1px;
+    border-radius: 0.4rem;
+    background-color: #fff;
+
+    button{
+        display: block;
+        width: 8.5rem;
+
+        svg{
+            path{
+                color: #000 !important;
+            }
+        }
+
+        span{
+            font-size: 1rem;
+        }
+    }
+}
+
+.accordion-header{
+    button{
+        border: 0;
+
+        svg{
+
+            path{
+                color: #fff !important;
+            }
+        }
+    }
+}

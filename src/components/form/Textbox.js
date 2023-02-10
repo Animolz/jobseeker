@@ -10,9 +10,9 @@ const Textbox = (props) => {
     }
 
     return(
-        <div className="wrap-input validate-input" id={id}>
+        <div className="textbox__wrapper validate-input" id={id}>
             <label className="txt1">{label}</label>
-            <input className="entry-input px-3" 
+            <input className="textbox__input" 
                 {...inputProps} 
                 onChange={onChange} 
                 onBlur={handleFocused} 

@@ -1,0 +1,18 @@
+.search-btn{
+    &__container{
+        margin: 0;
+        position: relative;
+    }
+
+    &__btn{ 
+        position: relative;
+        border-radius: 0.5rem;
+    }
+
+    &__input{ 
+        position: relative;
+        border: 0;
+        font-weight: 500;
+        background-color: transparent;
+    }
+}

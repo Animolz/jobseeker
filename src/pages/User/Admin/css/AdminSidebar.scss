@@ -1,0 +1,16 @@
+#header.admin-sidebar .pro-sidebar-inner .pro-sidebar-layout .active {
+    background: hsla(186, 66%, 40%, 1);
+    background: linear-gradient(90deg, hsla(186, 66%, 40%, 1) 0%, hsla(188, 78%, 69%, 1) 100%);
+    background: -moz-linear-gradient(90deg, hsla(186, 66%, 40%, 1) 0%, hsla(188, 78%, 69%, 1) 100%);
+    background: -webkit-linear-gradient(90deg, hsla(186, 66%, 40%, 1) 0%, hsla(188, 78%, 69%, 1) 100%);
+}
+
+#header.admin-sidebar .pro-sidebar-inner .pro-sidebar-layout ul .pro-inner-item .pro-icon-wrapper{
+    background: rgb(23, 134, 146);
+    color: #fff;
+}
+
+#header.admin-sidebar .pro-sidebar .pro-menu > ul > .pro-sub-menu > .pro-inner-list-item{
+    background: rgba(23, 134, 146, 0.2);
+    color: #fff;
+}

@@ -4,7 +4,7 @@
         position: absolute !important;
     }
 
-    .wrap-entry{
+    .entry{
         width: 35rem !important;
         background-color: #fff;
         border-radius: 10px;
@@ -12,23 +12,24 @@
         padding: 2rem 2rem;
         box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
 
-        .txt1{
-            font-weight: bold;
-        }
-
-        .entry-title{
+        &__title{
             font-size: 2.5rem;
             font-weight: 600;
             display: block;
             width: 100%;
         }
 
-        .wrap-input{
-            margin-bottom: 1rem;
-            position: relative;
+        .txt1{
+            font-weight: bold;
+        }
 
-            .entry-input{
-                
+        .textbox{
+            &__wrapper{
+                margin-bottom: 1rem;
+                position: relative;
+            }
+
+            &__input{
                 &:focus{
                     outline: none;
                     border: #0056f5 !important;
@@ -37,67 +38,82 @@
                 }
             }
         }
+    }
 
-        .submit-container{
-            text-align: center;
-            margin: 2rem 0;
-
-            .signup-btn{
-                padding: 0.2rem;
-                width: 12rem;
-                height: 3rem;
-                border: 0;
-                background-image: linear-gradient(25deg, rgba(150,128,215,1) 0%, rgba(180,144,190,1) 19%, rgba(126,121,173,1) 40%, rgba(104,130,170,1) 65%, rgba(168,219,250,1) 87%) !important;
-
-                &:hover input{
-                    background: none;
-                }
-
-                input{
-                    color: #fff;
-                    font-weight: bold;
-                    background: #05062d;
+    .entry{
+        & > form{
+            .submit-btn{
+                &__container{
+                    text-align: center;
+                    margin: 2rem 0;
                     width: 100%;
-                    height: 100%;
-                    border-radius: 0.5rem;
-                    transition: 300ms;
-                }
-            }
-
-            .submit-button{
-                padding: 0.2rem;
-                width: 12rem;
-                height: 3rem;
-                border: 0;
-                background-image: linear-gradient(144deg,#AF40FF, #5B42F3 50%,#00DDEB);
-
-                &:hover input{
-                    background: none;
-                }
-
-                input{
-                    color: #fff;
-                    font-weight: bold;
-                    background: #05062d;
-                    width: 100%;
-                    height: 100%;
-                    border-radius: 0.5rem;
-                    transition: 300ms;
-                }
-            }
-        }
-
-        .RadioButton{
-            
-            &:nth-child(2){
-                margin: 0 1rem;
-            }
-
-            label{
-                font-size: 1.2rem;
+        
+                    .entry-signup__btn{
+                        padding: 0.2rem;
+                        width: 12rem;
+                        height: 3rem;
+                        border: 0;
+                        background-image: linear-gradient(25deg, rgba(150,128,215,1) 0%, rgba(180,144,190,1) 19%, rgba(126,121,173,1) 40%, rgba(104,130,170,1) 65%, rgba(168,219,250,1) 87%) !important;
+        
+                        &:hover input{
+                            background: none;
+                        }
+        
+                        input{
+                            color: #fff;
+                            font-weight: bold;
+                            background: #05062d;
+                            width: 100%;
+                            height: 100%;
+                            border-radius: 0.5rem;
+                            transition: 300ms;
+                        }
+                    }
+        
+                    .entry-login__btn{
+                        padding: 0.2rem;
+                        width: 12rem;
+                        height: 3rem;
+                        border: 0;
+                        background-image: linear-gradient(144deg,#AF40FF, #5B42F3 50%,#00DDEB);
+        
+                        &:hover input{
+                            background: none;
+                        }
+        
+                        input{
+                            color: #fff;
+                            font-weight: bold;
+                            background: #05062d;
+                            width: 100%;
+                            height: 100%;
+                            border-radius: 0.5rem;
+                            transition: 300ms;
+                        }
+                    }
+                }            
             }
         }
     }
 
+    .RadioButton{
+        
+        &:nth-child(2){
+            margin: 0 1rem;
+        }
 
+        label{
+            font-size: 1.2rem;
+        }
+    }
+
+    .otp-send__loading{
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        background-color: rgba($color: #000000, $alpha: 0.3);
+        top: 0;
+        left: 0;
+        z-index: 999;
+    }
 }

@@ -4,7 +4,7 @@ const JobDescription = (props) => {
     const { job } = props;
 
     return (
-        <div className='description m-0'>
+        <div className='job-view__description mt-3'>
             <h4>About our company</h4>
             <p>{job.companyUser.company.introduction}</p>
             <h4>Job Description</h4>

@@ -4,43 +4,33 @@
         width: 30%;
         border: none;
 
-        .useravatar{
+        & > .row{
+            margin: 0;
+            padding: 0 1rem;
+        }
+
+        &__avatar{
             background-repeat: no-repeat;
             background-size: contain;
             background-position: center;
+            border-radius: 15px;
+            height: 7rem;
+            width: 7rem;
         }
 
-        .card-body{
+        &__body{
             padding: 1rem;
-            width: 20rem;
-
-            .card-description{
-                margin: 0.2rem 0;
-
-                div{
-                    width: 20rem;
-                }
-            }
+            max-width: 25rem;
 
             p{
                 overflow: hidden;
                 white-space: nowrap;
                 text-overflow: ellipsis;
             }
-
-            .time{
-                font-size: 0.7rem;
-                color: #5e5e5e;
-                text-align: right;
-
-                time{
-                    font-size: 0.7rem;
-                    color: #5e5e5e;
-                }
-            }
         }
-        
-        .card-description{
+
+        &__description{
+            margin: 0.2rem 0;
 
             div{
                 font-size: 0.9rem;
@@ -49,25 +39,20 @@
                 overflow: hidden;
                 white-space: nowrap;
                 text-overflow: ellipsis;
+                width: 20rem;
             }
         }
-    }
-}
 
-@media only screen and (max-width: 600px){
-    .card{
-        div{
-            display: block;
+        &__time{
+            
+            font-size: 0.7rem;
+                color: #5e5e5e;
+                text-align: right;
 
-            .useravatar{
-                height: 7rem;
-            }
-
-            div{
-                .card-body{
-                    width: fit-content !important;
+                time{
+                    font-size: 0.7rem;
+                    color: #5e5e5e;
                 }
-            }
         }
     }
 }

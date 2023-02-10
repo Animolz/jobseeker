@@ -1,0 +1,55 @@
+.candidate-home{
+    @import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+    &__hero{
+        text-align: center;
+        padding: 12.45rem 15rem;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    &__title{
+        position: relative;
+        font-family: 'Righteous', cursive;
+        font-size: 5rem;
+
+        &::before{
+            content: '';
+            position: absolute;
+            background-color: #01579b;
+            width: 50%;
+            bottom: -1rem;
+            left: 50%;
+            transform: translate(-50%, 0);
+            height: 0.7rem;
+            border-radius: 0.5rem;
+        }
+    }
+
+    &__text{
+        font-size: 2rem;
+        font-weight: bold;
+    }
+    
+    &__content{
+        padding: 2rem;
+        color: #ddd;
+        border-radius: 30px;
+        background-color: rgba(0,0,0,0.6);
+        -webkit-backdrop-filter: blur(2rem);
+        backdrop-filter: blur(2rem);
+
+        & > a{
+            color: #fff;
+            font-size: 1rem;
+            font-weight: bold;
+            padding: 1rem 2rem;
+
+            &:hover{
+                color: #fff;
+                transform: scale(1.2);
+                transition: transform 0.2s ease;
+            }
+        }
+    }
+}

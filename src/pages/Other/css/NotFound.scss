@@ -1,0 +1,20 @@
+.notfound{
+
+    &__hero{
+        width: 100%;
+        height: 100vh;
+        background: #304352;
+        background: -webkit-linear-gradient(to left, #546572, #d7d2cc);
+        background: linear-gradient(to left, #546572, #d7d2cc);
+    }
+
+    &__title{
+        font-size: 11rem;
+        margin: 0 1rem;
+    }
+
+    .spinner-border{
+        width: 10rem;
+        height: 10rem;
+    }
+}
